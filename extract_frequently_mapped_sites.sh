@@ -9,7 +9,7 @@ mkdir -p "$output_dir"  # Ensure output directory exists
 
 # Define proximity in base pairs for "closeness" of reads and frequency threshold
 proximity=10000
-frequency=10
+frequency=500
 
 # Loop through all BAM files in the directory
 for bam_file in "$bam_dir"/*sorted.bam; do
