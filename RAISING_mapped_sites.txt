@@ -11,29 +11,15 @@ Scaffold30_486 5899
 Scaffold11_437 11237
 ----
 Results for m1-3_S33_L001_aligned_sorted.bam:
-Scaffold156_52 12
-Scaffold465_20 23
-Scaffold69_306 12
-Scaffold37_410 39
 Scaffold16_694 8390
-Scaffold377_22 72
-Scaffold29_923 29
-Scaffold46_672 18
 Scaffold45_524 5167
 Scaffold219_168 6629
 Scaffold91_45 9889
-Scaffold444_3 21
-Scaffold347_62 13
-Scaffold6_809 37
 ----
 Results for m1-4_S34_L001_aligned_sorted.bam:
 Scaffold227_5 1140
 Scaffold15_1525 2677
-Scaffold6131_0 21
-Scaffold494_11 13
-Scaffold509_10 107
 Scaffold20_854 6701
-Scaffold269_128 16
 Scaffold93_233 1930
 Scaffold7_1882 2390
 Scaffold2_704 834
