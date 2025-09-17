@@ -1,4 +1,4 @@
-# Quantify fluorescence intensity in the two uploaded eye images.
+# Quantify fluorescence intensity in compound eye regions
 # Steps:
 # 1) Load images
 # 2) Extract red channel (fluorescence)
@@ -16,7 +16,7 @@ import os
 import glob
 
 # 240229_hyP_G1_raisingフォルダ内のすべてのJPGファイルを取得
-image_folder = "/Users/ohde/Documents/KULIP/projects/Gbim_transgenesis/hypbase/RAISING/240229_hyP_G1_raising"
+image_folder = "/path/to/image_folder"
 paths = glob.glob(os.path.join(image_folder, "*.jpg"))
 paths.sort()  # ファイル名順にソート
 
@@ -186,7 +186,7 @@ def analyze_image(path):
     
     # Save overlay
     base = os.path.splitext(os.path.basename(path))[0]
-    output_dir = "/Users/ohde/Documents/KULIP/projects/Gbim_transgenesis/hypbase/RAISING"
+    output_dir = "/path/to/output_dir"
     overlay_path = os.path.join(output_dir, f"{base}_overlay_{best_method}.png")
     Image.fromarray(overlay).save(overlay_path)
     
@@ -249,7 +249,7 @@ for p in paths:
 df = pd.DataFrame(all_rows)
 
 # Save CSV
-output_dir = "/Users/ohde/Documents/KULIP/projects/Gbim_transgenesis/hypbase/RAISING"
+output_dir = "/path/to/output_dir"
 csv_path = os.path.join(output_dir, "fluorescence_eye_quantification.csv")
 df.to_csv(csv_path, index=False)
 
